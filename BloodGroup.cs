@@ -11,20 +11,20 @@ namespace PatientApp
 
     struct BloodGroup
     {
-        public Group group { get; private set; }
-        public Rhesus rhesus { get; private set; }
+        public Group Group { get; private set; }
+        public Rhesus Rhesus { get; private set; }
 
         public BloodGroup(Group _group, Rhesus _rhesus)
         {
-            group = _group;
-            rhesus = _rhesus;
+            Group = _group;
+            Rhesus = _rhesus;
         }
 
 
         public override int GetHashCode()
         {
-            int g = (int)group;
-            int r = (int)rhesus;
+            int g = (int)Group;
+            int r = (int)Rhesus;
             
             return r * 4 + g;
         }
