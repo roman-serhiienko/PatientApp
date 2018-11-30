@@ -26,7 +26,7 @@ namespace PatientApp
             int g = (int)Group;
             int r = (int)Rhesus;
             
-            return r * 4 + g;
+            return (g << 1) | r;
         }
 
     }
