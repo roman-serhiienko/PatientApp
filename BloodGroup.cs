@@ -11,9 +11,9 @@ namespace PatientApp
 
     struct BloodGroup
     {
-        public Group group;
-        public Rhesus rhesus;
-        
+        public Group group { get; private set; }
+        public Rhesus rhesus { get; private set; }
+
         public BloodGroup(Group _group, Rhesus _rhesus)
         {
             group = _group;
