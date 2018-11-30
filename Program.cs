@@ -36,7 +36,8 @@ namespace PatientApp
                 string stringList = "";
                 foreach (BloodGroup item in bloodList)
                 {
-                    stringList += (item.group.ToString() + item.rSign + ", ");
+                    string rSign = (item.rhesus == Rhesus.minus) ? "-" : "+";
+                    stringList += (item.group.ToString() + rSign + ", ");
                 }
                 stringList = stringList.Remove(stringList.Length - 2);
                 return stringList;

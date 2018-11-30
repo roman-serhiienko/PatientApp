@@ -13,12 +13,11 @@ namespace PatientApp
     {
         public Group group;
         public Rhesus rhesus;
-        public string rSign;
+        
         public BloodGroup(Group _group, Rhesus _rhesus)
         {
             group = _group;
             rhesus = _rhesus;
-            rSign = (rhesus == Rhesus.minus) ? "-" : "+";
         }
 
 
